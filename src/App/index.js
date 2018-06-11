@@ -6,33 +6,32 @@ import {fetchPuppers} from '../Services/pupper'
 
 function handleSelection (choice) {
   this.props.fetchPuppers(choice)
-  .then(data => {
-    const pupperUrls = data.message.map(url => url)
-    this.setState({
-      puppers: pupperUrls,
-      formError: undefined
+    .then(data => {
+      const pupperUrls = data.message.map(url => url)
+      this.setState({
+        puppers: pupperUrls,
+        formError: undefined
+      })
     })
-  })
-  .catch(err => {
-    this.setState({
-      formError: err.error
+    .catch(err => {
+      this.setState({
+        formError: err.error
+      })
     })
-  })
 }
 
 class App extends Component {
-
   state = {
     puppers: [],
     formError: undefined
   }
 
-  render() {
+  render () {
     return (
-      <main className='App'>
-      <PuppersSelection handleSubmit={handleSelection.bind(this)} />
-      {this.state.formError && <span className='error'>{this.state.formError}</span>}
-      <PuppersGallery puppers={this.state.puppers} />
+      <main className='App code min-vh-100 bg-washed-red'>
+        <PuppersSelection handleSubmit={handleSelection.bind(this)} />
+        {this.state.formError && <span className='error'>{this.state.formError}</span>}
+        <PuppersGallery puppers={this.state.puppers} />
       </main>
     )
   }
@@ -46,4 +45,4 @@ App.propTypes = {
   fetchPuppers: PropTypes.func
 }
 
-export default App;
+export default App

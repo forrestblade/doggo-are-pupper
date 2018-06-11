@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import { expect } from 'code'
 import { shallow } from 'enzyme'
 import React from 'react'
@@ -35,7 +36,7 @@ describe('Given a Selection of puppers', () => {
       const form = section.find('form')
 
       expect(section.length).to.equal(1)
-      expect(section.childAt(0).is('h1.header')).true()
+      expect(section.childAt(0).is('h1')).true()
       expect(form.childAt(0).is('input')).true()
       expect(form.childAt(1).is('input')).true()
       expect(form.childAt(2).is('input')).true()
@@ -58,30 +59,23 @@ describe('Given a Selection of puppers', () => {
       })
 
       it('should match state and input value', () => {
-          expect(component.state().choice).to.equal(mockPupper)
+        expect(component.state().choice).to.equal(mockPupper)
       })
 
-
       describe('when a pupper is submitted', () => {
-
         beforeEach(() => {
-          component.find('form').simulate('submit' , {preventDefault: sinon.spy()})
+          component.find('form').simulate('submit', {preventDefault: sinon.spy()})
         })
 
         it('should call the correct callback once', () => {
           sinon.assert.calledOnce(handleSubmitStub)
         })
 
-
         it('should set choice state to undefined', () => {
           const state = component.state().choice
           expect(state).to.equal(undefined)
         })
-
       })
-
-
-
     })
   })
 })

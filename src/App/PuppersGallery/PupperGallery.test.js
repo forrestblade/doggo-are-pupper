@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import React from 'react'
 import { expect } from 'code'
 import { shallow } from 'enzyme'
@@ -6,7 +7,7 @@ import PupperGallery from './PuppersGallery'
 describe('given a list of pupper image urls', () => {
   function requiredProps (overrides) {
     let props = {
-        puppers: []
+      puppers: []
     }
 
     return {

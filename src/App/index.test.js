@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import React from 'react'
 import { expect } from 'code'
 import { shallow } from 'enzyme'
