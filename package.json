@@ -1,10 +1,9 @@
-{
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/forrestblade/doggo-are-pupper.git"
-  },
+{"repository": {
+  "type": "git",
+  "url": "https://github.com/forrestblade/doggo-are-pupper.git"
+},
   "name": "doggo-are-pupper",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
