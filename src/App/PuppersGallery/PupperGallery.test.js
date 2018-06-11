@@ -25,11 +25,6 @@ describe('given a list of pupper image urls', () => {
     expect(component.is('article.Gallery')).to.be.true()
   })
 
-  it('should contain an h2', () => {
-    let component = renderComponent()
-
-    expect(component.find('h2').exists()).to.be.true()
-  })
 
   describe('When passed an empty array of urls', () => {
     let component = renderComponent()
@@ -54,15 +49,86 @@ describe('given a list of pupper image urls', () => {
         'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
         'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
         'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10263.jpg',
+        'https://images.dog.ceo/breeds/hound-afghan/n02088094_10715.jpg',
         'https://images.dog.ceo/breeds/hound-afghan/n02088094_10822.jpg'
       ]
     }
 
-    it('should render images of array length', () => {
-      const puppers = mockData.message.slice(0, 12).map(url => url)
+    it('should render images of array length and an h2', () => {
+      let random = Math.floor(Math.random() * mockData.message.length)
+      const puppers = mockData.message.slice(random, random+12).map(url => url)
       console.log(puppers)
       let component = renderComponent(requiredProps({ puppers }))
 
+      expect(component.find('h2').exists()).to.be.true()
       expect(component.find('img').length).to.equal(puppers.length)
     })
   })

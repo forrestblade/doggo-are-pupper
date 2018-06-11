@@ -15,11 +15,10 @@
     "tachyons": "^4.10.0"
   },
   "scripts": {
-    "precommit": "set CI=true&&npm test",
     "cmt": "git-cz",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/index.js",
+    "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/index.js --collectCoverageFrom=!src/registerServiceWorker.js",
     "eject": "react-scripts eject",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
@@ -30,7 +29,6 @@
     "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "husky": "^0.14.3",
     "semantic-release": "^15.5.1",
     "sinon": "^5.1.1",
     "travis-deploy-once": "^5.0.0"
